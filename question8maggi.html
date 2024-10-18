@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+      .nav{
+        height: 100vh;
+        width: 90px;
+       
+        display: flex;
+        flex-direction: column;
+        
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        position: fixed;
+        
+        
+      }
+      #maggie {
+        height: 70px;
+        width: 90px;
+        background-color: #fed734;
+        position: relative;
+      }
+      #maggie img{
+        width: 90px;
+        position: absolute;
+        left: 40px;
+        top: 10px;
+      }
+      #icon{
+        height: 30px;
+        margin-top: 10px;
+      }
+     .maincontainer{
+        
+        height: 500px;
+        width: auto;
+        background-color: lightcyan;
+        position: absolute;
+        top: 0px;
+        left: 130px;
+        display: flex;
+        gap: 5px;
+     }
+      .logincontainer{
+        height: 500px;
+        width: 500px;
+        background-color:white;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        
+      }
+      .logincontainer2{
+        height: 500px;
+        width: 500px;
+        background-color:white;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+      }
+      #facebooklogo{
+        height: 30px;
+        position: relative;
+        top: 6px;
+        left: 5px;
+        background-color: blue;
+        object-fit: cover;
+        width: 24px;
+      }
+      .span1{
+        background-color: blue;
+      
+      }
+      #googlelogo{
+        height: 30px;
+        position: relative;
+        top: 10px;
+        left: 10px;
+        background-color: white;
+        
+      }
+      .google{
+        background-color: white;
+        color: black;
+        
+      }
+      #email{
+        width: 300px;
+        height: 40px;
+        align-items: center;
+      }
+      #password{
+        width: 300px;
+        height: 40px;
+      }
+      .btn{
+        width: 310px;
+      }
+      #join{
+        font-size: 20px;
+        font-weight: 900;
+        position: relative;
+        left: 0px;
+      }
+      .btn2{
+        width: 250px;
+        height: 40px;
+        background-color: black;
+        color: white;
+      }
+      .footercontainer{
+        height: 200px;
+        width: 1100px;
+        background-color: #3e2b1a;
+        position: absolute;
+        top: 100%;
+        left: 0;
+      
+        
+      }
+      .footercontent{
+        height: 300px;
+        width: 200px;
+        display: flex;
+        gap: 0px;
+        padding: 10px;
+   
+      }
+      .footercontent img{
+        height: 100px;
+      }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div  id="maggie"> <img src="https://www.maggi.in/sites/default/files/maggi_logo_png_0.png" alt=""></div>
+        <img  src="https://www.maggi.in/sites/default/files/2020-01/01_Rezepte.svg" id="icon" alt="">
+        <p>Recipes</p>
+        <img src="https://www.maggi.in/sites/default/files/2019-12/05_Maggi.svg" id="icon" alt="">
+        <p>Maggi</p>
+        <img src="https://www.maggi.in/sites/default/files/2022-12/LogoMealPlanner_0.svg"id="icon" alt="">
+        <p>MyMenu</p>
+       <img src="https://www.maggi.in/sites/default/files/2019-12/03_Suche_11.svg" id="icon" alt=""> 
+       <p>Search</p>
+       <img src="https://www.maggi.in/sites/default/files/2020-07/MAGGI_Navigation_MyMaggi_0_0.svg" id="icon" alt="">
+       <p>Login</p>
+
+    </div>
+    <!-- login page -->
+     <div class="maincontainer">
+        <div class="logincontainer">
+            <h1>My Maggi</h1>
+            <h2>Welcome back !</h2>
+            <div><img src="data:image/png;base64,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" id="facebooklogo" alt="">
+            <span class="span1">Sign in with Facebook</span></div>
+            
+            <div>     <img src="data:image/png;base64,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" id="googlelogo" alt="">
+          <span class="google">Sign in with Google</span></div>
+          <label for="">E-mail</label>
+          <input id="email" type="email" placeholder="Enter your e-mail address here*">
+          <label for="">Password</label>
+          <input id="password" type="password" placeholder="Enter your Password here*">
+          <button class="btn">Login Via email</button>
+      
+      
+     
+     </div>
+     <div class="logincontainer2">
+        <h1>Not registered yet?</h1>
+        <br>
+        <button class="btn2"> >  Register</button>
+        <br>
+        <span id="join"> Join Maggi today!</span>
+        <span>Your personal newsletter with</span>
+        <span>exiting recipes and ideas</span>
+        <span>Prsonalize your newsletter to your</span>
+        <span>Prefences</span>
+        <span>Get to know about Maggi products</span>
+
+
+    </div>
+    <!-- footer -->
+    <div class="footercontainer">
+        <div class="footercontent">
+            <img src="https://www.maggi.in/sites/default/files/2020-01/facebook.svg" alt="">
+            <img src="https://www.maggi.in/sites/default/files/2020-01/youtube.svg" alt="">
+            <img src="https://www.maggi.in/sites/default/files/2020-02/instagram.svg" alt="">
+            <img src="https://www.maggi.in/sites/default/files/2020-03/Twitter%20%281%29.svg" alt="">
+            <div>En</div>
+            <div>HI</div>
+
+        </div>
+
+    </div>
+</body>
+</html>
