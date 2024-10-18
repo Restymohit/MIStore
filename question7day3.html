@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            height:100%;
+            width:100vh;
+            border:2px solid red;
+            gap:20px;
+            justify-content: center;
+            align-items: center;
+            padding: 50px;
+        }
+        .box{
+            width:100px;
+            height:100px;
+            background-color: #3498db;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        .box3:hover{
+            width: 150px;
+            height: 150px;
+            background-color: #e6c3ce;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Box-1</div>
+        <div class="box">Box-2</div>
+        <div class="box box3">Box-3</div>
+        <div class="box">Box-4</div>
+        <div class="box">Box-5</div>
+    </div>
+</body>
+</html>
